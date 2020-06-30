@@ -116,15 +116,42 @@ footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; }
-    footer .footer-wrapper .contacts, footer .footer-wrapper .contact-form {
-      box-sizing: border-box;
-      max-width: 50%;
-      padding: 10px; }
+  footer .contacts, footer .contact-form {
+    box-sizing: border-box;
+    max-width: 50%;
+    padding: 10px; }
   footer form {
     display: flex;
     flex-direction: column;
     padding-top: 40px; }
     footer form input, footer form textarea {
       margin-bottom: 3px; }
+
+@media screen and (max-width: 1141px) {
+  .divider,
+  .video h3 {
+    display: none; } }
+@media screen and (max-width: 771px) {
+  footer .footer-wrapper {
+    display: flex;
+    flex-direction: column; }
+
+  footer .footer-wrapper .contacts,
+  footer .footer-wrapper .contact-form {
+    max-width: 100%; } }
+@media screen and (max-width: 430px) {
+  nav {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .video h2,
+  .logow {
+    display: none; }
+
+  .logo {
+    display: block; } }
+@media screen and (min-width: 431px) {
+  .logo {
+    display: none; } }
 
 /*# sourceMappingURL=main.css.map */
