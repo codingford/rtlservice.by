@@ -16,7 +16,8 @@ video {
     width: 100%;
 }
 .video {
-    height: 100vh;
+    max-height: 100vh;
+    height: 100%;
     overflow: hidden;
     position: relative;
     object-fit: cover;
@@ -79,6 +80,7 @@ nav {
     }
     a[href^="tel:"], a[href^="mailto:"] {
         padding: 5px;
+        font-size: 25px;
     }
 }
 
@@ -89,7 +91,7 @@ h2 {
 h3 {
     font-size: 35px;
 }
-main{
+main {
     padding: 10px;
     h3, h4, h5 {
         text-align: center;
@@ -97,11 +99,15 @@ main{
     h4 {
         font-size: 32px;
     }
+    li {
+        list-style: disc;
+    }
     .img-wrapper {
-        object-position: right center;
+        object-position: center;
         object-fit: cover;
         overflow: hidden;
-        height: 50vh;
+        max-height: 50vh;
+        height: 100%;
         width: 100%;
         margin: 0 auto;
         img {
@@ -113,7 +119,9 @@ main{
         color: #1a1a18;
         line-height: 150%;
         text-align: justify;
-
+    }
+    ul, li {
+        list-style: disc;
     }
 }
 footer {
@@ -121,14 +129,32 @@ footer {
     width: 100%;
     font-size: 26px;
     line-height: 150%;
+    ul,li{
+        list-style: none;
+        padding: 0;
+    }
     .footer-wrapper {
         max-width: 1170px;
         margin: 0 auto;
         display: flex;
-        flex-direction: column;
-       .contacts {
+        flex-direction: row;
+        flex-wrap: wrap;
+       .contacts, .contact-form {
+            box-sizing: border-box;    
             max-width: 50%;
-       }
+            padding: 10px;
+        }
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        input, textarea {
+            margin-bottom: 3px;
+        }
+    }
+    .map {
+        display: none;
     }
 }
 
