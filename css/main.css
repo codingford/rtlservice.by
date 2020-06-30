@@ -8,6 +8,9 @@ body {
   background-attachment: fixed;
   background-position: center center;
   position: relative; }
+  body a:hover, body .submit:hover {
+    color: #F9AC14;
+    cursor: pointer; }
 
 video {
   width: 100%; }

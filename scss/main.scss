@@ -11,6 +11,10 @@ body {
     background-attachment: fixed;;
     background-position: center center;
     position: relative;
+    a:hover, .submit:hover {
+        color: $main-color;
+        cursor: pointer;
+    }
 }
 video {
     width: 100%;
@@ -154,6 +158,7 @@ footer {
         }
     }
 }
+
 @media screen and (max-width: 1141px) {
     .divider,
     .video h3 {
