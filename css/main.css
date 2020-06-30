@@ -8,9 +8,6 @@ body {
   background-attachment: fixed;
   background-position: center center;
   position: relative; }
-  body a:hover, body .submit:hover {
-    color: #F9AC14;
-    cursor: pointer; }
 
 video {
   width: 100%; }
@@ -130,6 +127,11 @@ footer {
     footer form input, footer form textarea {
       margin-bottom: 3px; }
 
+@media (hover: hover) {
+  a:hover,
+  .submit:hover {
+    color: #F9AC14;
+    cursor: pointer; } }
 @media screen and (max-width: 1141px) {
   .divider,
   .video h3 {
