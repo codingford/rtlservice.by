@@ -101,6 +101,21 @@ main {
     text-align: justify; }
   main ul, main li {
     list-style: disc; }
+  main .clients {
+    display: flex;
+    background-color: #F9AC14;
+    max-height: 100px;
+    height: 100%; }
+  main .client {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden; }
+    main .client img {
+      margin: 10px 0 5px;
+      height: 100%;
+      max-height: 60px; }
 
 footer {
   background-color: #00000099;

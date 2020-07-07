@@ -123,6 +123,26 @@ main {
     ul, li {
         list-style: disc;
     }
+    .clients {
+        display: flex;
+        background-color: $main-color;
+        max-height: 100px;
+        height: 100%;
+    }
+    .client {
+        display: flex!important;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+        overflow: hidden;
+        // height: 100%;
+        img {
+            // width: 100%;
+            margin: 10px 0 5px;
+            height: 100%;
+            max-height: 60px;
+        }
+    }
 }
 footer {
     background-color: #00000099;
